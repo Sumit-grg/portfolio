@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4ae8eb;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7070ee), to(#aae3e3));
+  background-image: linear-gradient(#7070ee, #aae3e3);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header #photo {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 15px 50px;
+  margin: 10px;
+  -webkit-box-shadow: 5px 10px #636363;
+          box-shadow: 5px 10px #636363;
+}
+
+header #arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header .typewriter {
+  font-size: 2em;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #9a9a9a;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
+          animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fffffe;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fffffe;
+  }
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+P {
+  border: 2px solid black;
+  max-width: 90vw;
+  margin: 5px auto;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+#projects {
+  padding: 25px;
+  margin: 5px 40px;
+}
+
+#projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects .container div {
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 90vw;
+  margin: 40px auto;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projects .container div .projvid {
+  width: 400px;
+}
+
+#projects .container div .proj {
+  width: 400px;
+}
+
+#projects .container div .text {
+  text-align: center;
+  border: none;
+}
+
+#projects .container div .lunchcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 1;
+}
+
+#skills {
+  padding: 25px;
+}
+
+#skills .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skills .icon div {
+  text-align: center;
+  padding: 30px;
+  margin: 0 30px;
+  z-index: 1;
+}
+
+#skills .icon div:hover {
+  opacity: 0.5;
+}
+
+#skills .icon div .iconname {
+  border: none;
+  border-radius: 5px;
+}
+
+#skills .icon img {
+  z-index: 1;
+  width: 45px;
+}
+
+#skills .icon img:hover {
+  opacity: 0.5;
+}
+
+#skills p {
+  background-color: #cbcbcb;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+
+#about {
+  padding: 25px;
+  margin: 5px 120px;
+}
+
+#about p {
+  background-color: #cbcbcb;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#contact {
+  padding: 25px;
+  margin: 5px 80px;
+}
+
+#contact .contactinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contactinfo .contactdetail {
+  width: 320px;
+}
+
+#contact .contactinfo .contactdetail p {
+  background-color: #cbcbcb;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#contact .contactinfo .contact-icon {
+  width: 320px;
+  z-index: 2;
+}
+
+#contact .contactinfo .contact-icon p {
+  background-color: #cbcbcb;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#contact .contactinfo .contact-icon p a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+#contact .contactinfo .contact-icon p a:hover {
+  color: #295ac2;
+}
+
+footer p {
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  padding: 5px;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=style.css.map */
