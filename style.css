@@ -88,19 +88,12 @@ header h1 {
 header .typewriter {
   font-size: 2em;
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #9a9a9a;
-  /* The typwriter cursor */
   white-space: nowrap;
-  /* Keeps the content on a single line */
   margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
-  /* Adjust as needed */
   -webkit-animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
           animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
-  /* The typing effect */
-  /* The typewriter cursor effect */
 }
 
 @-webkit-keyframes typing {
@@ -177,7 +170,7 @@ P {
   max-width: 90vw;
   margin: 40px auto;
   padding-bottom: 5px;
-  font-size: 0.9em;
+  font-size: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,16 +184,26 @@ P {
 }
 
 #projects .container div .projvid {
-  width: 400px;
+  width: 550px;
 }
 
 #projects .container div .proj {
-  width: 400px;
+  width: 550px;
 }
 
 #projects .container div .text {
   text-align: center;
   border: none;
+}
+
+#projects .container div .infoText {
+  font-size: 16px;
+  border: none;
+  width: 500px;
+}
+
+#projects .container div .infoText span {
+  font-weight: 600;
 }
 
 #projects .container div .lunchcode {
@@ -211,6 +214,22 @@ P {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   z-index: 1;
+}
+
+#projects .container div .techUsed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: none;
+  width: 10vw;
+  margin: 0 auto;
 }
 
 #skills {

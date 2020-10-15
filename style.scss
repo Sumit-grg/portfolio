@@ -117,17 +117,17 @@ P {
       max-width: 90vw;
       margin: 40px auto;
       padding-bottom: 5px;
-      font-size: 0.9em;
+      font-size: 1em;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
 
       .projvid {
-        width: 400px;
+        width: 550px;
       }
 
       .proj {
-        width: 400px;
+        width: 550px;
       }
 
       .text {
@@ -135,10 +135,29 @@ P {
         border: none;
       }
 
+      .infoText {
+        font-size: 16px;
+        border: none;
+        width: 500px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
       .lunchcode {
         display: flex;
         justify-content: space-evenly;
         z-index: 1;
+      }
+
+      .techUsed {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: none;
+        width: 10vw;
+        margin: 0 auto;
       }
     }
   }
