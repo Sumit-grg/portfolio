@@ -6,9 +6,7 @@
 }
 
 $border: 2px solid black;
-// a{
-//   all:unset;
-// }
+
 .vid {
   position: fixed;
   right: 0;
@@ -160,6 +158,12 @@ P {
         border: none;
         width: 10vw;
         margin: 0 auto;
+      }
+
+      .techUsed#techUsed1 {
+        // border: 2px solid black;
+        width: 275px;
+        height: 40px;
       }
     }
   }

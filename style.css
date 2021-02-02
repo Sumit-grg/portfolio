@@ -232,6 +232,11 @@ P {
   margin: 0 auto;
 }
 
+#projects .container div .techUsed#techUsed1 {
+  width: 275px;
+  height: 40px;
+}
+
 #skills {
   padding: 25px;
 }
